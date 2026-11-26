@@ -1,0 +1,57 @@
+{% extends 'portal/base.html' %}
+
+{% block title %}About | Colegio de Mançao Portal{% endblock %}
+
+{% block content %}
+  {% load static %}
+  <!-- About Page Banner -->
+  <section class="page-header-banner">
+    <div class="container">
+      <p class="hero-kicker">SABIDURÍA Y HONOR &bull; EST. 2026</p>
+      <h1>About the Portal</h1>
+    </div>
+  </section>
+
+  <div class="container page-body">
+    <!-- Two-Column Institutional Overview -->
+    <section class="about-split">
+      <div class="about-main">
+        <h2>Empowering students through clear, accessible campus information</h2>
+        <p>
+          <strong>Portal Purpose:</strong> The Colegio de Mançao Student Portal was created to bring essential announcements, class schedules, and learning materials together into one fast, reliable web platform.
+        </p>
+        <p>
+          <strong>Intended Users:</strong> Designed for Colegio de Mançao undergraduate students, academic advisers, and laboratory instructors seeking quick access to daily academic updates.
+        </p>
+      </div>
+
+      <aside class="crest-card">
+        <img src="{% static 'portal/images/colegio_logo.jpg' %}"
+             alt="Colegio de Mançao official emblem with motto Sabiduría y Honor"
+             width="130" height="130">
+        <h3>Colegio de Mancao</h3>
+        <p class="motto">&ldquo;Sabiduría y Honor&rdquo;</p>
+        <p class="est">Established 2026</p>
+      </aside>
+    </section>
+
+    <!-- Accessibility Feature Highlight -->
+    <section class="section-block">
+      <h2>Accessibility &amp; Inclusive Design</h2>
+      <div class="card-grid">
+        <article class="portal-card">
+          <h3>High-Contrast Palette</h3>
+          <p>Dark midnight navy (<code>#09182D</code>) and royal crest blue (<code>#0B3970</code>) paired with crisp white surfaces exceed WCAG AA contrast ratios for comfortable reading.</p>
+        </article>
+        <article class="portal-card">
+          <h3>Keyboard-First Navigation</h3>
+          <p>Includes a hidden &ldquo;Skip to main content&rdquo; link, semantic HTML landmarks, and high-visibility gold focus rings (<code>:focus-visible</code>) for keyboard-only users.</p>
+        </article>
+        <article class="portal-card">
+          <h3>Descriptive Media &amp; Responsive Layout</h3>
+          <p>All institutional emblems include descriptive alternative text, and CSS Grid/Flexbox adapts smoothly from desktop down to mobile viewports.</p>
+        </article>
+      </div>
+    </section>
+  </div>
+{% endblock %}

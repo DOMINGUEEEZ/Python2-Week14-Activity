@@ -1,0 +1,63 @@
+{% extends 'portal/base.html' %}
+
+{% block title %}Home | Colegio de Mançao Portal{% endblock %}
+
+{% block content %}
+  <!-- Full-width Navy Hero Banner -->
+  <section class="hero-banner">
+    <div class="container">
+      <p class="hero-kicker">COLEGIO DE MANCAO STUDENT PORTAL</p>
+      <h1>Welcome, <span class="gold-accent">Elijah</span></h1>
+      <p class="hero-lead">Your central hub for campus announcements, class schedules, and academic resources.</p>
+    </div>
+  </section>
+
+  <div class="container page-body">
+    <!-- Notice Bar -->
+    <div class="notice-banner" role="region" aria-label="Enrollment notice">
+      <span class="notice-badge">NOTICE</span>
+      <p>First Semester class schedules and student advisement guidelines are now available for 2026.</p>
+    </div>
+
+    <!-- Quick Links / Portal Features -->
+    <section class="section-block">
+      <h2>Quick Links &amp; Portal Features</h2>
+      <div class="card-grid">
+        <article class="portal-card">
+          <div class="card-tag">01</div>
+          <h3>Campus Announcements</h3>
+          <p>Stay informed on enrollment deadlines, academic calendars, and college-wide events.</p>
+          <span class="card-arrow">View updates &rarr;</span>
+        </article>
+
+        <article class="portal-card">
+          <div class="card-tag">02</div>
+          <h3>Class &amp; Lab Schedules</h3>
+          <p>Check room assignments, laboratory hours, and faculty consultation blocks in one place.</p>
+          <span class="card-arrow">Check schedule &rarr;</span>
+        </article>
+
+        <article class="portal-card">
+          <div class="card-tag">03</div>
+          <h3>Learning Resources</h3>
+          <p>Access course syllabi, coding standards, library guides, and downloadable student forms.</p>
+          <span class="card-arrow">Browse files &rarr;</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Announcements Feed -->
+    <section class="section-block">
+      <h2>Student Announcements</h2>
+      <div class="announcement-list">
+        <div class="announcement-item">
+          <div>
+            <h3>Welcome to Colegio de Mancao</h3>
+            <p class="meta-date">Academic Year 2026 &bull; Office of Student Affairs</p>
+          </div>
+          <span class="pill-gold">New</span>
+        </div>
+      </div>
+    </section>
+  </div>
+{% endblock %}

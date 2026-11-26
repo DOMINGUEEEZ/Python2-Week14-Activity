@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Colegio de Mancao | Student Portal{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'portal/css/style.css' %}">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="{% url 'home' %}" class="brand">
+        <img src="{% static 'portal/images/colegio_logo.jpg' %}"
+               alt="Colegio de Mancao circular crest logo"
+               width="56" height="56">
+        <div class="brand-text">
+          <span class="brand-name">Colegio de Mancao</span>
+        </div>
+      </a>
+      {% include 'portal/partials/navbar.html' %}
+    </div>
+  </header>
+
+  <main id="main-content">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>Colegio de Mancao</strong> &bull; <em>Sabiduría y Honor</em> &bull; Est. 2026</p>
+    </div>
+  </footer>
+</body>
+</html>

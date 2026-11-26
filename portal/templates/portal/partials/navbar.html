@@ -1,0 +1,4 @@
+<nav class="main-nav" aria-label="Main navigation">
+  <a href="{% url 'home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a>
+  <a href="{% url 'about' %}" class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}">About</a>
+</nav>
